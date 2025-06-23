@@ -1,0 +1,7 @@
+streamlit
+langchain
+langchain-google-genai
+faiss-cpu
+PyPDF2
+sentence-transformers
+huggingface_hub
