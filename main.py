@@ -10,7 +10,9 @@ from langchain.prompts import PromptTemplate
 from langchain_google_genai import ChatGoogleGenerativeAI
 
 
-os.environ["GOOGLE_API_KEY"] = "AIzaSyDydWxM_3IoML4ZPSe-YAlBQOZvXGCz8PI"
+# os.environ["GOOGLE_API_KEY"] = "AIzaSyDydWxM_3IoML4ZPSe-YAlBQOZvXGCz8PI"
+os.environ["GOOGLE_API_KEY"] = st.secrets["GOOGLE_API_KEY"]
+
 
 
 PDF_FILES = [
