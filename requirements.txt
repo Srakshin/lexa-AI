@@ -1,7 +1,7 @@
-streamlit
 langchain
-langchain-google-genai
+langchain-community
+streamlit
 faiss-cpu
-PyPDF2
 sentence-transformers
-huggingface_hub
+langchain-google-genai
+python-dotenv
