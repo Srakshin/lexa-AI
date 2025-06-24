@@ -27,7 +27,7 @@ PDF_FILES = [
     "March25.pdf"
 ]
 INDEX_DIR = "faiss_clat_index"
-CHUNK_SIZE = 500
+CHUNK_SIZE = 300
 CHUNK_OVERLAP = 50
 EMBED_MODEL = "all-MiniLM-L6-v2"
 
@@ -128,7 +128,7 @@ def get_vectorstore(_docs):
 def build_qa_chain():
     docs = load_documents()
     db = get_vectorstore(docs)
-    retriever = db.as_retriever(search_kwargs={"k": 10})
+    retriever = db.as_retriever(search_kwargs={"k": 4})
 
     custom_prompt = PromptTemplate.from_template("""
 You are a helpful and strict CLAT-AILET study assistant. Your job is to answer legal, constitutional, current affairs, or general knowledge questions **strictly** based on the context provided from the compendium.
